@@ -12,7 +12,7 @@ client.create_platform_component(
     compiler="gcc"
 )
 
-platform = client.get_component("PYNQ_Platform")#.build()
+platform = client.get_component("PYNQ_Platform")
 
 domain = platform.get_domain(name="zynq_fsbl")
 status = domain.set_lib(lib_name="lwip220", path="/tools/Xilinx/2025.2/Vitis/data/embeddedsw/ThirdParty/sw_services/lwip220_v1_3")
@@ -20,4 +20,5 @@ status = domain.set_lib(lib_name="lwip220", path="/tools/Xilinx/2025.2/Vitis/dat
 domain = platform.get_domain(name="standalone_ps7_cortexa9_0")
 status = domain.set_lib(lib_name="lwip220", path="/tools/Xilinx/2025.2/Vitis/data/embeddedsw/ThirdParty/sw_services/lwip220_v1_3")
 
+platform.build()
 vitis.dispose()
