@@ -16,9 +16,11 @@ platform = client.get_component("PYNQ_Platform")
 
 domain = platform.get_domain(name="zynq_fsbl")
 status = domain.set_lib(lib_name="lwip220", path="/tools/Xilinx/2025.2/Vitis/data/embeddedsw/ThirdParty/sw_services/lwip220_v1_3")
+status = domain.set_config(option = "lib", param = "lwip220_no_sys_no_timers", value = "false", lib_name="lwip220")
 
 domain = platform.get_domain(name="standalone_ps7_cortexa9_0")
 status = domain.set_lib(lib_name="lwip220", path="/tools/Xilinx/2025.2/Vitis/data/embeddedsw/ThirdParty/sw_services/lwip220_v1_3")
+status = domain.set_config(option = "lib", param = "lwip220_no_sys_no_timers", value = "false", lib_name="lwip220")
 
 platform.build()
 vitis.dispose()
