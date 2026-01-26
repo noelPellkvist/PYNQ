@@ -1,0 +1,78 @@
+#################################################
+# Xilinx / Vitis generated
+#################################################
+
+_ide/
+.vitis/
+.vscode/
+
+PYNQ_Platform/
+app_component/
+!app_component/src/
+!app_component/src/**
+PYNQ/
+
+**/.Xil/
+*.Xil/
+
+hw/sdt/
+ps7_*/
+standalone_*/
+build_configs/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+*.ninja
+*.cmake
+
+vitisWorkspace.json
+
+#################################################
+# Build artifacts
+#################################################
+
+build/
+Debug/
+Release/
+*.elf
+*.map
+*.o
+*.d
+*.a
+
+#################################################
+# Binary outputs
+#################################################
+
+*.bin
+*.bit
+*.pdi
+*.xclbin
+
+#################################################
+# Logs
+#################################################
+
+logs/
+*.log
+*.jou
+*.lock
+
+#################################################
+# Python
+#################################################
+
+__pycache__/
+*.pyc
+
+#################################################
+# OS junk
+#################################################
+
+.DS_Store
+Thumbs.db
+
+# clangd / editor cache
+.cache/
+.clangd/
+compile_commands.json
