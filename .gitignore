@@ -7,7 +7,7 @@ _ide/
 .vscode/
 
 PYNQ_Platform/
-app_component/
+app_component/*
 !app_component/src/
 !app_component/src/**
 PYNQ/
