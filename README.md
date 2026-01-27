@@ -16,6 +16,8 @@ source /tools/Xilinx/2025.2/Vitis/settings64.sh
 #This will open vitis, just click "ok" or "update" and then close it
 vitis -w .
 
+#Inside these scripts there are strings for the paths to the Vitis install and
+#might be different on you computer if the source command from earlier did not work for you
 vitis -s scripts/create_platform.py
 vitis -s scripts/create_app.py
 
